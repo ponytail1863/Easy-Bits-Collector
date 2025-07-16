@@ -1,14 +1,14 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Dani Song Collector</title>
+    <title>Dani Song Collector</title>
 </head>
 <body>
-  <h1>Upload a song to recognise:</h1>
-  <form method="post" enctype="multipart/form-data" action="/upload">
-    <input type="file" name="file">
-    <input type="submit" value="Upload">
-  </form>
+    <h1>Dani Song Collector</h1>
+    <form action="/recognise" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="audio/*" required>
+        <button type="submit">Recognise</button>
+    </form>
 </body>
 </html>
